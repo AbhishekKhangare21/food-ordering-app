@@ -9,11 +9,11 @@ const Header = () => {
 
   return (
     <header className="flex items-center justify-between py-2">
-      <Link className="text-primary font-semibold text-2xl" href="">
+      <Link href={"/"} className="text-primary font-semibold text-2xl">
         PIZZA ZONE
       </Link>
       <nav className="flex items-center gap-8 text-gray-500 font-semibold">
-        <Link href={""}>Home</Link>
+        <Link href={"/"}>Home</Link>
         <Link href={""}>Menu</Link>
         <Link href={""}>About</Link>
         <Link href={""}>Contact</Link>
@@ -27,7 +27,7 @@ const Header = () => {
             Logout
           </button>
         )}
-        {status != "authenticated" && (
+        {status === "unauthenticated" && (
           <>
             <Link href={"/login"}>Login</Link>
             <Link
