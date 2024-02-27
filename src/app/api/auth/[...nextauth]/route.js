@@ -1,5 +1,5 @@
 import mongoose from "mongoose";
-import { User } from "@/app/models/User";
+import { User } from "@/models/User";
 import bcrypt from "bcrypt";
 import CredentialsProvider from "next-auth/providers/credentials";
 import NextAuth from "next-auth/next";
